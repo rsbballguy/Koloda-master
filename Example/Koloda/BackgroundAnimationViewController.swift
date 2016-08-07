@@ -28,7 +28,7 @@ class BackgroundAnimationViewController: UIViewController {
         kolodaView.delegate = self
         kolodaView.dataSource = self
         kolodaView.animator = BackgroundKolodaAnimator(koloda: kolodaView)
-        
+        self.navigationController?.navigationBarHidden = true
         self.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
     }
     

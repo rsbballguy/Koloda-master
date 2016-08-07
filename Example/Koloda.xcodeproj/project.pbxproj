@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00C9238E1D56CDFD0089E3EA /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C9238D1D56CDFD0089E3EA /* CViewController.swift */; };
+		00C923901D56CF9C0089E3EA /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C9238F1D56CF9C0089E3EA /* MyCollectionViewCell.swift */; };
 		191D14781525C400D3E86FEC /* Pods_Koloda_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5243B3EDBF06248559332C86 /* Pods_Koloda_Example.framework */; };
 		440FB7671B51499A009FC9FC /* CustomKolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440FB7661B51499A009FC9FC /* CustomKolodaView.swift */; };
 		440FB7691B515995009FC9FC /* BackgroundAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440FB7681B515995009FC9FC /* BackgroundAnimationViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00C9238D1D56CDFD0089E3EA /* CViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CViewController.swift; sourceTree = "<group>"; };
+		00C9238F1D56CF9C0089E3EA /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		093C6CC368001B8BAFD235CB /* Pods-Koloda_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Koloda_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Koloda_Example/Pods-Koloda_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1242FA2632AFB60821C100AF /* Pods-Koloda_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Koloda_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Koloda_Tests/Pods-Koloda_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		440FB7661B51499A009FC9FC /* CustomKolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKolodaView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 				028E92741D56C10E003CF357 /* koloda */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				00C9238F1D56CF9C0089E3EA /* MyCollectionViewCell.swift */,
+				00C9238D1D56CDFD0089E3EA /* CViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				4420661B1B44577500FD4CAD /* OverlayView.xib */,
@@ -151,7 +157,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Koloda_Example" */;
 			buildPhases = (
-				03D97207A3576AB8EB212F45 /* 📦 Check Pods Manifest.lock */,
+				03D97207A3576AB8EB212F45 /* [CP] Check Pods Manifest.lock */,
 				0182469EE898CFC3334C577B /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
@@ -234,14 +240,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		03D97207A3576AB8EB212F45 /* 📦 Check Pods Manifest.lock */ = {
+		03D97207A3576AB8EB212F45 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +324,8 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				446BFD091CB0184A00619E78 /* BackgroundKolodaAnimator.swift in Sources */,
+				00C923901D56CF9C0089E3EA /* MyCollectionViewCell.swift in Sources */,
+				00C9238E1D56CDFD0089E3EA /* CViewController.swift in Sources */,
 				440FB7671B51499A009FC9FC /* CustomKolodaView.swift in Sources */,
 				44B5EC291B660C8500895E3D /* CustomOverlayView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

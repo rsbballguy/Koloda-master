@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         for index in 0..<numberOfCards {
             array.append(UIImage(named: "Card_like_\(index + 1)")!)
         }
-        
         return array
     }()
     

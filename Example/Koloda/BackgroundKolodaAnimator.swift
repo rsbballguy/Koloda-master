@@ -11,7 +11,6 @@ import Koloda
 import pop
 
 class BackgroundKolodaAnimator: KolodaViewAnimator {
-    
     override func applyScaleAnimation(card: DraggableCardView, scale: CGSize, frame: CGRect, duration: NSTimeInterval, completion: AnimationCompletionBlock) {
         
         let scaleAnimation = POPSpringAnimation(propertyNamed: kPOPLayerScaleXY)
