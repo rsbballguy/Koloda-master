@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		028E92771D56C72E003CF357 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E92761D56C72E003CF357 /* StartVC.swift */; };
+		028E92791D56C73D003CF357 /* SelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E92781D56C73D003CF357 /* SelectionVC.swift */; };
+		028E927B1D56C749003CF357 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E927A1D56C749003CF357 /* SettingVC.swift */; };
+		028E927D1D56C753003CF357 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E927C1D56C753003CF357 /* MainVC.swift */; };
 		191D14781525C400D3E86FEC /* Pods_Koloda_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5243B3EDBF06248559332C86 /* Pods_Koloda_Example.framework */; };
 		440FB7671B51499A009FC9FC /* CustomKolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440FB7661B51499A009FC9FC /* CustomKolodaView.swift */; };
 		440FB7691B515995009FC9FC /* BackgroundAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440FB7681B515995009FC9FC /* BackgroundAnimationViewController.swift */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		028E92761D56C72E003CF357 /* StartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		028E92781D56C73D003CF357 /* SelectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionVC.swift; sourceTree = "<group>"; };
+		028E927A1D56C749003CF357 /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		028E927C1D56C753003CF357 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		093C6CC368001B8BAFD235CB /* Pods-Koloda_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Koloda_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Koloda_Example/Pods-Koloda_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1242FA2632AFB60821C100AF /* Pods-Koloda_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Koloda_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Koloda_Tests/Pods-Koloda_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		440FB7661B51499A009FC9FC /* CustomKolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKolodaView.swift; sourceTree = "<group>"; };
@@ -62,6 +70,7 @@
 		028E92741D56C10E003CF357 /* koloda */ = {
 			isa = PBXGroup;
 			children = (
+				028E92751D56C6EA003CF357 /* controllers */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				440FB7681B515995009FC9FC /* BackgroundAnimationViewController.swift */,
 				446BFD081CB0184A00619E78 /* BackgroundKolodaAnimator.swift */,
@@ -70,6 +79,17 @@
 				44B5EC281B660C8500895E3D /* CustomOverlayView.swift */,
 			);
 			name = koloda;
+			sourceTree = "<group>";
+		};
+		028E92751D56C6EA003CF357 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				028E92761D56C72E003CF357 /* StartVC.swift */,
+				028E92781D56C73D003CF357 /* SelectionVC.swift */,
+				028E927A1D56C749003CF357 /* SettingVC.swift */,
+				028E927C1D56C753003CF357 /* MainVC.swift */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -320,9 +340,13 @@
 				446BFD091CB0184A00619E78 /* BackgroundKolodaAnimator.swift in Sources */,
 				440FB7671B51499A009FC9FC /* CustomKolodaView.swift in Sources */,
 				44B5EC291B660C8500895E3D /* CustomOverlayView.swift in Sources */,
+				028E927D1D56C753003CF357 /* MainVC.swift in Sources */,
+				028E92791D56C73D003CF357 /* SelectionVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				4420661F1B4457E800FD4CAD /* ExampleOverlayView.swift in Sources */,
+				028E927B1D56C749003CF357 /* SettingVC.swift in Sources */,
 				440FB7691B515995009FC9FC /* BackgroundAnimationViewController.swift in Sources */,
+				028E92771D56C72E003CF357 /* StartVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,9 +30,6 @@
                                         <state key="normal" image="ic_card_from_bg">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="dh2-Wx-deB" kind="presentation" id="2pr-g7-IrK"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Un4-e1-II6">
                                         <rect key="frame" x="284" y="33" width="21" height="22"/>
@@ -161,9 +158,6 @@
                                         <state key="normal" image="ic_koloda">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="presentation" id="vqN-lC-baD"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jg8-XG-VvV">
                                         <rect key="frame" x="284" y="40" width="21" height="22"/>
@@ -231,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yd5-80-mNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="920"/>
+            <point key="canvasLocation" x="768" y="1035"/>
         </scene>
         <!--Item-->
         <scene sceneID="sfa-7o-tMG">
@@ -256,37 +250,34 @@
         <scene sceneID="l3u-GB-k0I">
             <objects>
                 <tableViewController id="Fwb-RP-7sv" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="86" sectionHeaderHeight="28" sectionFooterHeight="28" id="BEu-OU-ghV">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="173" sectionHeaderHeight="28" sectionFooterHeight="28" id="BEu-OU-ghV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.61176470588235299" green="0.15294117647058825" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="KMx-gt-x3T">
-                                <rect key="frame" x="0.0" y="28" width="600" height="86"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="173" id="hde-Mx-9b2">
+                                <rect key="frame" x="0.0" y="28" width="600" height="173"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KMx-gt-x3T" id="fGg-Vo-h79">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="86"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hde-Mx-9b2" id="Y72-79-BWG">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="172.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Daniel Christopher bet Mar Basava $15...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVn-xJ-QBa">
-                                            <rect key="frame" x="8" y="20" width="316" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dx7-q0-Rob">
+                                            <rect key="frame" x="360" y="8" width="232" height="48"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="That mar Can't beat me in chess" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVn-j5-NoU">
-                                            <rect key="frame" x="8" y="44" width="247" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh8-Gp-kCX">
+                                            <rect key="frame" x="8" y="8" width="270" height="48"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="TVn-j5-NoU" firstAttribute="centerY" secondItem="fGg-Vo-h79" secondAttribute="centerY" constant="8.5" id="EHa-Bo-T46"/>
-                                        <constraint firstItem="TVn-j5-NoU" firstAttribute="leading" secondItem="aVn-xJ-QBa" secondAttribute="leading" id="Swl-nb-1J6"/>
-                                    </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.43137255311012268" green="0.47450980544090271" blue="0.52549022436141968" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -305,42 +296,13 @@
             <objects>
                 <viewController id="uPa-ot-fbW" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEJ-xc-mdo"/>
-                        <viewControllerLayoutGuide type="bottom" id="2Yu-C0-sfO"/>
+                        <viewControllerLayoutGuide type="top" id="pxn-s1-ovt"/>
+                        <viewControllerLayoutGuide type="bottom" id="uJK-o7-1i4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OKc-Q2-o9V">
+                    <view key="view" contentMode="scaleToFill" id="rwp-jE-e6P">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send a fling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slu-GD-faE">
-                                <rect key="frame" x="198" y="28" width="176" height="44"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sent" translatesAutoresizingMaskIntoConstraints="NO" id="seB-OZ-9M7">
-                                <rect key="frame" x="371" y="34" width="32" height="32"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Amount" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ode-1J-qKe">
-                                <rect key="frame" x="213" y="74" width="174" height="30"/>
-                                <color key="textColor" red="0.61176470588235299" green="0.15294117647058825" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="To" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hCQ-Sr-p3w">
-                                <rect key="frame" x="213" y="112" width="174" height="30"/>
-                                <color key="textColor" red="0.61176470588235299" green="0.15294117647058825" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Middle man" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zjs-Vf-MqO">
-                                <rect key="frame" x="213" y="150" width="174" height="30"/>
-                                <color key="textColor" red="0.61176470588235299" green="0.15294117647058825" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="0.61176470588235299" green="0.15294117647058825" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="c7w-wK-jKQ"/>
                 </viewController>
@@ -379,6 +341,5 @@
         <image name="ic_like" width="38" height="34"/>
         <image name="ic_skip" width="34" height="34"/>
         <image name="ic_undo" width="21" height="21"/>
-        <image name="sent" width="64" height="64"/>
     </resources>
 </document>
