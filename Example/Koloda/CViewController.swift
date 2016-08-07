@@ -59,6 +59,6 @@ class CViewController: UIViewController, UICollectionViewDataSource, UICollectio
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
         let yourNextViewController = (segue.destinationViewController as! BackgroundAnimationViewController)
-        yourNextViewController.value = information
+        // yourNextViewController.value = information
     }
 }

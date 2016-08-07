@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'Koloda_Example' do
   pod "Koloda", :path => "../"
+  pod "Alamofire"
 end
 
 post_install do |installer|
