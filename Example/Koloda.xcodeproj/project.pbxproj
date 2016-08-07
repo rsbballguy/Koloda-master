@@ -59,6 +59,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		028E92741D56C10E003CF357 /* koloda */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				440FB7681B515995009FC9FC /* BackgroundAnimationViewController.swift */,
+				446BFD081CB0184A00619E78 /* BackgroundKolodaAnimator.swift */,
+				4420661E1B4457E800FD4CAD /* ExampleOverlayView.swift */,
+				440FB7661B51499A009FC9FC /* CustomKolodaView.swift */,
+				44B5EC281B660C8500895E3D /* CustomOverlayView.swift */,
+			);
+			name = koloda;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +94,8 @@
 		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				028E92741D56C10E003CF357 /* koloda */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				440FB7681B515995009FC9FC /* BackgroundAnimationViewController.swift */,
-				446BFD081CB0184A00619E78 /* BackgroundKolodaAnimator.swift */,
-				4420661E1B4457E800FD4CAD /* ExampleOverlayView.swift */,
-				440FB7661B51499A009FC9FC /* CustomKolodaView.swift */,
-				44B5EC281B660C8500895E3D /* CustomOverlayView.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -143,12 +151,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Koloda_Example" */;
 			buildPhases = (
+				03D97207A3576AB8EB212F45 /* 📦 Check Pods Manifest.lock */,
 				0182469EE898CFC3334C577B /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				64922D3147424C142700ED20 /* [CP] Embed Pods Frameworks */,
 				822E414921E8C1E4C57072A9 /* [CP] Copy Pods Resources */,
+				5E35C01C591F949F31B559BA /* 📦 Embed Pods Frameworks */,
+				3919005859658DCC5742EA8C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +232,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		03D97207A3576AB8EB212F45 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3919005859658DCC5742EA8C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Koloda_Example/Pods-Koloda_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E35C01C591F949F31B559BA /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Koloda_Example/Pods-Koloda_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		64922D3147424C142700ED20 /* [CP] Embed Pods Frameworks */ = {
